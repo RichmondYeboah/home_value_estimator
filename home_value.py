@@ -5,10 +5,10 @@ class House:
         self.price = price
         
     def get_place(self):
-        return f'Your house in {self.place} cost: {self.price}'
+        return f'Your house in {self.place} cost: ${self.price}'
     
     def housing_tax(self,state):
-        return f'Your taxes for your house at {state} is 6% the actual price is: {self.price*1.06}'
+        return f'Your taxes for your house at {state} is 6% the actual price is: ${self.price*1.06}'
 
 boston = House("Boston, Massachusets", 4, 830_000)
 print(boston.get_place())
