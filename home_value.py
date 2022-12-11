@@ -9,12 +9,21 @@ class House:
     
     def housing_tax(self,state):
         return f'Your taxes for your house at {state} is 6% the actual price is: ${self.price*1.06}'
-
-boston = House("Boston, Massachusets", 4, 830_000)
-print(boston.get_place())
-# print(boston.housing_tax("Virginia"))
+class dwelling(House):
+    def __init__(self,bathrooms = '3', sqrt = '1_875', condition = 'good', location = 'city'):
+        self.bathrooms = bathrooms
+        self.sqrt_ft = sqrt
+        self.condition = condition
+        self.location = location
+    
+    def location_estimator(location):
+        suburbs = 440_000
+        city = 650_000
+        if location == "suburbs":
+            return f'your house will cost less than ${suburbs}'
+        else:
+            return f'Your house will cost more than ${city}'
 
 housing_boston = House("Rockville, Maryland", 6, 550_000 )
 print(housing_boston.get_place())
 print(housing_boston.housing_tax("Rockville"))
-    
