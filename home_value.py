@@ -24,7 +24,12 @@ class dwelling(House):
             return f'your house will cost less than ${suburbs}'
         else:
             return f'Your house will cost more than ${city}'
-
-housing_boston = House("Rockville, Maryland", 6, 550_000 )
-print(housing_boston.get_place())
-print(housing_boston.housing_tax("Rockville"))
+def main(): 
+    print(housing_boston.get_place())
+    print(housing_boston.housing_tax("Rockville"))
+    print(housing_location_estimator.location_estimator("city"))
+    
+if __name__ =='__main__':
+    housing_boston = House("Rockville, Maryland", 6, 550_000 )
+    housing_location_estimator = dwelling
+    main()
