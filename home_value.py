@@ -11,7 +11,7 @@ class House:
         return f'Your taxes for your house at {state} is 6% the actual price is: ${self.price*1.06}'
     
 class dwelling(House):
-    def __init__(self, bathrooms = '3', sqrt = 1_875, condition = 'good', location = 'city'):
+    def __init__(self, bathrooms = int, sqrt = 1_875, condition = 'good', location = 'city'):
         self.bathrooms = bathrooms
         self.sqrt_ft = sqrt
         self.condition = condition
