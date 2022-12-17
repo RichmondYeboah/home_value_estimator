@@ -1,5 +1,5 @@
 import home_value
-    #test_get_place
+    #test_housing input
 def test_housing_input():
     '''Testing that the House class has the correct parameters'''
     #Passed the argument in the house class
@@ -22,8 +22,6 @@ def test_location_estimator():
     #Assert the location to see if the location is set correctly
     assert estimator.price == 150_000, "The price type may not have been set correctly"
     
-     
-
     
 def test_condition_estimator():
     #Passed the argument in the dwellingclass
